@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.arlib.floatingsearchview.FloatingSearchView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/floating_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_leftActionMode="showSearch"
+            app:floatingSearch_searchHint="搜索联系人"
+            app:floatingSearch_showSearchKey="false"
+            app:floatingSearch_suggestionsListAnimDuration="250" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:dividerHeight="0.8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#1e99cc33">
+
+        <com.cqnu.lengyt.widget.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/centerHintTv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="#1e000000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#6699ff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+</FrameLayout>

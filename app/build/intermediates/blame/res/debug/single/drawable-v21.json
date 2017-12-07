@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c595895292eca22ded194aa186c0113814143764\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\rect_btn_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\91520beba939af94bbbb43416092d24cf83e7831\\output\\res\\drawable-v21\\rect_btn_selector.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c595895292eca22ded194aa186c0113814143764\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c595895292eca22ded194aa186c0113814143764\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\suggestion_item_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\91520beba939af94bbbb43416092d24cf83e7831\\output\\res\\drawable-v21\\suggestion_item_background.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c595895292eca22ded194aa186c0113814143764\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\oval_btn_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\91520beba939af94bbbb43416092d24cf83e7831\\output\\res\\drawable-v21\\oval_btn_selector.xml"
+    }
+]

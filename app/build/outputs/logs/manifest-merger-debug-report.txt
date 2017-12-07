@@ -1,0 +1,138 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:6:5-72
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:6:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:7:5-73
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:7:22-70
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:8:5-69
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:8:22-66
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.WRITE_APN_SETTINGS
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:12:22-74
+application
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:14:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\d3892e5ee1f5d3700c08c0f2e158daaab1cd853a\output\AndroidManifest.xml:9:5-20
+MERGED from [org.litepal.android:core:1.3.0] C:\Users\Administrator\.android\build-cache\c8ec411738d67190720d4525ca1204b2c505334c\output\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.arimorty:floatingsearchview:2.1.1] C:\Users\Administrator\.android\build-cache\91520beba939af94bbbb43416092d24cf83e7831\output\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\f8c65c62332feeaf7a9bf280be58c429d78b281b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\0f4adc321cb458765985b95ab8d12851e5ffd674\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\94fc2c4bb9117cd4cd72e876403e5a09f487e998\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\63fe2d39fc12310bec166373dcfe9e7ace892c5a\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\da01591a4c54ab04f84d9e1bc10e7c42c28d7c36\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\b25d24b8975d1e048cbfc821f5c7e68cdcc2e23a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\95c2c7c8eca0d6397dc85ca11a8e81f412baeb62\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\d2fafd66b3ebcc952d21dc241788209073d65096\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\c68c82244190f696a5a0e969e2c81325d59a8d64\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\78af72247cd90359a880c2d7470f79988b57e1cc\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\e58dc325305c44ab34976c0b9967d4fb1ac15e79\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:18:9-41
+	android:supportsRtl
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:20:9-35
+	android:roundIcon
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:19:9-54
+	android:allowBackup
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:16:9-35
+	android:icon
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:17:9-43
+	android:theme
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:21:9-59
+	tools:replace
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:22:9-52
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:15:9-54
+activity#com.cqnu.lengyt.activity.MainActivity
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:23:9-28:20
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:23:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:24:13-27:29
+action#android.intent.action.MAIN
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml:26:27-74
+uses-sdk
+INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\d3892e5ee1f5d3700c08c0f2e158daaab1cd853a\output\AndroidManifest.xml:5:5-7:41
+MERGED from [org.litepal.android:core:1.3.0] C:\Users\Administrator\.android\build-cache\c8ec411738d67190720d4525ca1204b2c505334c\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.roughike:bottom-bar:2.0.2] C:\Users\Administrator\.android\build-cache\6357c7ee55f4923af7ed65f381a447f763fdfbf8\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.arimorty:floatingsearchview:2.1.1] C:\Users\Administrator\.android\build-cache\91520beba939af94bbbb43416092d24cf83e7831\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\f8c65c62332feeaf7a9bf280be58c429d78b281b\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\0f4adc321cb458765985b95ab8d12851e5ffd674\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\94fc2c4bb9117cd4cd72e876403e5a09f487e998\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\743ecd0360a9673711890530d3cf3827e0bd0133\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\63fe2d39fc12310bec166373dcfe9e7ace892c5a\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\da01591a4c54ab04f84d9e1bc10e7c42c28d7c36\output\AndroidManifest.xml:20:5-43
+MERGED from [com.bartoszlipinski:viewpropertyobjectanimator:1.2.0] C:\Users\Administrator\.android\build-cache\74d620a2a794a4de151bce3092536c26f29f2fc4\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\b25d24b8975d1e048cbfc821f5c7e68cdcc2e23a\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\95c2c7c8eca0d6397dc85ca11a8e81f412baeb62\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\d2fafd66b3ebcc952d21dc241788209073d65096\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\c68c82244190f696a5a0e969e2c81325d59a8d64\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\78af72247cd90359a880c2d7470f79988b57e1cc\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\e58dc325305c44ab34976c0b9967d4fb1ac15e79\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+		INJECTED from D:\James\Android\workplace\Contacts\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\f8c65c62332feeaf7a9bf280be58c429d78b281b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\0f4adc321cb458765985b95ab8d12851e5ffd674\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\94fc2c4bb9117cd4cd72e876403e5a09f487e998\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\743ecd0360a9673711890530d3cf3827e0bd0133\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\63fe2d39fc12310bec166373dcfe9e7ace892c5a\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\da01591a4c54ab04f84d9e1bc10e7c42c28d7c36\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\b25d24b8975d1e048cbfc821f5c7e68cdcc2e23a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\95c2c7c8eca0d6397dc85ca11a8e81f412baeb62\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\d2fafd66b3ebcc952d21dc241788209073d65096\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\c68c82244190f696a5a0e969e2c81325d59a8d64\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\78af72247cd90359a880c2d7470f79988b57e1cc\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\e58dc325305c44ab34976c0b9967d4fb1ac15e79\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\c595895292eca22ded194aa186c0113814143764\output\AndroidManifest.xml:26:9-47
