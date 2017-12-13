@@ -1,8 +1,8 @@
 package com.cqnu.lengyt.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (TextUtils.equals(result.get(0).getPassword(), pwd.getText().toString())) {
                         ToastUtil.showToast(getApplicationContext(), 0, "登陆成功！");
                         Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                        i.putExtra("userName", userName.getText().toString());
                         startActivity(i);
                         finish();
                     } else {

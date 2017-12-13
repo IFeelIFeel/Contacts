@@ -2,9 +2,10 @@
 <litepal>
     <dbname value="contacts" />
 
-    <version value="1" />
+    <version value="6" />
 
     <list>
         <mapping class="com.cqnu.lengyt.bean.User" />
+        <mapping class="com.cqnu.lengyt.bean.Contact"/>
     </list>
 </litepal>

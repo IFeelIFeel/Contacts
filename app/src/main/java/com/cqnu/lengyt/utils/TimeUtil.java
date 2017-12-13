@@ -87,6 +87,7 @@ public class TimeUtil {
     public static long getTimeDifference(String starTime, String endTime) {
         String timeString = "";
         long diff = 0;
+        long day = 0;
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         try {
@@ -95,7 +96,7 @@ public class TimeUtil {
 
             diff = parse1.getTime() - parse.getTime();
 
-            long day = diff / (24 * 60 * 60 * 1000);
+            day = diff / (24 * 60 * 60 * 1000);
             long hour = (diff / (60 * 60 * 1000) - day * 24);
             long min = ((diff / (60 * 1000)) - day * 24 * 60 - hour * 60);
             long s = (diff / 1000 - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60);
@@ -114,7 +115,7 @@ public class TimeUtil {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return diff;
+        return day;
 
     }
 

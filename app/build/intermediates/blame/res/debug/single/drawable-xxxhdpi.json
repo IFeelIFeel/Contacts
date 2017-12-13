@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_tab_setting.png",
-        "source": "D:\\James\\Android\\workplace\\Contacts\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_tab_setting.png"
+        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_tab_main.png",
+        "source": "E:\\Android\\workplace\\Contacts\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_tab_main.png"
     },
     {
-        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_tab_main.png",
-        "source": "D:\\James\\Android\\workplace\\Contacts\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_tab_main.png"
+        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_tab_setting.png",
+        "source": "E:\\Android\\workplace\\Contacts\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_tab_setting.png"
     }
 ]

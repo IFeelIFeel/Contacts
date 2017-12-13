@@ -15,10 +15,13 @@
  */
 package com.cqnu.lengyt.bean;
 
-public class Contact {
+import org.litepal.crud.DataSupport;
+
+public class Contact extends DataSupport {
     private String name;
     private String phone;
     private char firstLetter;
+    private String user;
 
     public String getName() {
         return name;
@@ -42,5 +45,13 @@ public class Contact {
 
     public void setFirstLetter(char firstLetter) {
         this.firstLetter = firstLetter;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 }

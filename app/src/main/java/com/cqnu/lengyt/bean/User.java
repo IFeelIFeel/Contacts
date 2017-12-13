@@ -31,4 +31,5 @@ public class User extends DataSupport {
     public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
+
 }

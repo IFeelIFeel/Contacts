@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.cqnu.lengyt.R;
 import com.cqnu.lengyt.bean.User;
@@ -37,10 +38,9 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
             finish();
         } else {
             startTime = result.get(0).getStartTime();
-            diff = TimeUtil.getTimeDifference(startTime, TimeUtil.getNowTime());
+            diff = TimeUtil.getTimeDifference(startTime, TimeUtil.getNowTime())+11;
             //判断时间差
             if (diff > 10) {
-                DataSupport.deleteAll(User.class);
                 Intent intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 finish();

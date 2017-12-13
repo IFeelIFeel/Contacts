@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.cqnu.lengyt.activity.ContactDetailActivity">
+
+    <include layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_detail_photo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="James"
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/detail_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="68629315"
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/detail_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner"
+        android:text="编辑"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/detail_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner"
+        android:text="删除"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/detail_call"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner"
+        android:text="拨打电话"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/detail_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner"
+        android:text="发送短信"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

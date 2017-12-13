@@ -29,12 +29,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity android:name="com.cqnu.lengyt.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.cqnu.lengyt.activity.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.cqnu.lengyt.activity.RegisterActivity" />
+        <activity android:name="com.cqnu.lengyt.activity.ContactDetailActivity" />
+        <activity android:name="com.cqnu.lengyt.activity.AddEditContactActivity" />
+        <activity android:name="com.cqnu.lengyt.activity.LoginActivity" />
     </application>
 
 </manifest>

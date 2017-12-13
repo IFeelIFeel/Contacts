@@ -129,7 +129,7 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="clear_btn_color">#787878</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#2c2c2c</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="dark_gray">#787878</color>

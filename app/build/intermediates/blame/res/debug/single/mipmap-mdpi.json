@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
-        "source": "D:\\James\\Android\\workplace\\Contacts\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "E:\\Android\\workplace\\Contacts\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "D:\\James\\Android\\workplace\\Contacts\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "E:\\Android\\workplace\\Contacts\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]

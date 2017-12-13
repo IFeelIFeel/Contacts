@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cqnu.lengyt.activity.RegisterActivity"
-    android:orientation="vertical">
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.cqnu.lengyt.activity.RegisterActivity">
+
+    <include layout="@layout/header" />
+
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -22,7 +26,8 @@
         android:hint="用户名"
         android:inputType="text"
         android:singleLine="true"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/r_password"
@@ -32,19 +37,19 @@
         android:hint="密码"
         android:imeOptions="actionGo"
         android:inputType="numberPassword"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimary" />
 
     <Button
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_corner"
         android:gravity="center"
         android:text="注册"
         android:textColor="@android:color/white"
         android:textSize="22sp" />
-
 
 
 </LinearLayout>

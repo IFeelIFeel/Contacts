@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:orientation="vertical">
+
+    <include layout="@layout/header" />
 
     <ImageView
         android:layout_width="60dp"
@@ -21,7 +24,8 @@
         android:hint="用户名"
         android:inputType="text"
         android:singleLine="true"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/password"
@@ -31,14 +35,15 @@
         android:hint="密码"
         android:imeOptions="actionGo"
         android:inputType="numberPassword"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimary" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_corner"
         android:gravity="center"
         android:text="登陆"
         android:textColor="@android:color/white"
