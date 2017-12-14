@@ -38,9 +38,12 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                List<User> result = DataSupport.where("user=?", userName.getText().toString()).find(User.class);
-                if (result != null && result.size() > 0) {
-                    if (TextUtils.equals(result.get(0).getPassword(), pwd.getText().toString())) {
+                List<User> resultList = DataSupport.where("user=?", userName.getText().toString()).find(User.class);
+                if (resultList != null && resultList.size() > 0) {
+                    User result = resultList.get(0);
+                    if (TextUtils.equals(result.getPassword(), pwd.getText().toString())) {
+                        result.setLogin(true);
+                        result.updateAll("user=?", userName.getText().toString());
                         ToastUtil.showToast(getApplicationContext(), 0, "登陆成功！");
                         Intent i = new Intent(LoginActivity.this, MainActivity.class);
                         i.putExtra("userName", userName.getText().toString());

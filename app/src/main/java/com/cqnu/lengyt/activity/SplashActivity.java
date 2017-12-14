@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.cqnu.lengyt.R;
+import com.cqnu.lengyt.bean.Contact;
 import com.cqnu.lengyt.bean.User;
 import com.cqnu.lengyt.utils.TimeUtil;
 
@@ -19,11 +20,13 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
     final Handler mHandler = new Handler();
     String startTime;
     long diff;
+    List<User> result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        result = DataSupport.where("isLogin=?", "1").find(User.class);
         mHandler.postDelayed(this, 2000);
 
 
@@ -31,14 +34,13 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
 
     @Override
     public void run() {
-        List<User> result = DataSupport.findAll(User.class);
         if (result.size() == 0) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             finish();
         } else {
             startTime = result.get(0).getStartTime();
-            diff = TimeUtil.getTimeDifference(startTime, TimeUtil.getNowTime())+11;
+            diff = TimeUtil.getTimeDifference(startTime, TimeUtil.getNowTime());
             //判断时间差
             if (diff > 10) {
                 Intent intent = new Intent(this, LoginActivity.class);
@@ -46,6 +48,7 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
                 finish();
             } else {
                 Intent intent = new Intent(this, MainActivity.class);
+                intent.putExtra("userName", result.get(0).getUser());
                 startActivity(intent);
                 finish();
             }

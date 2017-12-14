@@ -19,6 +19,7 @@ import com.cqnu.lengyt.activity.ContactDetailActivity;
 import com.cqnu.lengyt.adapter.ContactsListAdapter;
 import com.cqnu.lengyt.bean.Contact;
 import com.cqnu.lengyt.bean.User;
+import com.cqnu.lengyt.utils.ContactUtil;
 import com.cqnu.lengyt.widget.SideBar;
 
 import org.litepal.crud.DataSupport;
@@ -42,6 +43,12 @@ public class MainFragment extends Fragment {
 
     public MainFragment(String userName) {
         mUserName = userName;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        showListView();
     }
 
     @Override
@@ -118,6 +125,7 @@ public class MainFragment extends Fragment {
     //显示联系人列表
     private void showListView() {
         list = DataSupport.where("user=?", mUserName).find(Contact.class);
+        ContactUtil.sortContactList(list);
         adapter = new ContactsListAdapter(getContext(), list, R.layout.list_item);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

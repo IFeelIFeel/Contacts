@@ -1,18 +1,18 @@
 [
     {
-        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\be2a56dfa51f12034fa7ece673dda27fce9726c8\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\be2a56dfa51f12034fa7ece673dda27fce9726c8\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\be2a56dfa51f12034fa7ece673dda27fce9726c8\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "E:\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\be2a56dfa51f12034fa7ece673dda27fce9726c8\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "D:\\James\\Android\\workplace\\Contacts\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f8c65c62332feeaf7a9bf280be58c429d78b281b\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     }
 ]

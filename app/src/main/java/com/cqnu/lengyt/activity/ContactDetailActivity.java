@@ -110,17 +110,20 @@ public class ContactDetailActivity extends AppCompatActivity {
         editContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(ContactDetailActivity.this, AddEditContactActivity.class);
+                //0编辑 1新增
+                intent.putExtra("index", 0);
+                intent.putExtra("name", name);
+                intent.putExtra("phone", phone);
+                startActivity(intent);
 
             }
         });
         deleteContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                List<Contact> t = DataSupport.findAll(Contact.class);
-                contactList.remove(contactList.get(position));
-                DataSupport.deleteAll(Contact.class);
-                DataSupport.saveAll(contactList);
-                t = DataSupport.findAll(Contact.class);
+                DataSupport.deleteAll(Contact.class, "name=?", contactList.get(position).getName());
+                //List<Contact> contactList2 = DataSupport.findAll(Contact.class);
                 finish();
                 ToastUtil.showToast(getApplicationContext(), 0, "删除成功！");
             }

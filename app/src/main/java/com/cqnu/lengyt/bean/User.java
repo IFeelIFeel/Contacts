@@ -7,6 +7,7 @@ public class User extends DataSupport {
     private String user;
     private String password;
     private String startTime;
+    private boolean isLogin = false;
 
     public String getUser() {
         return user;
@@ -32,4 +33,11 @@ public class User extends DataSupport {
         this.startTime = startTime;
     }
 
+    public boolean isLogin() {
+        return isLogin;
+    }
+
+    public void setLogin(boolean login) {
+        isLogin = login;
+    }
 }

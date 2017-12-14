@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,14 +16,18 @@ import com.cqnu.lengyt.R;
 import com.cqnu.lengyt.activity.AddEditContactActivity;
 import com.cqnu.lengyt.activity.LoginActivity;
 import com.cqnu.lengyt.bean.Contact;
-import com.cqnu.lengyt.utils.CharacterParser;
+import com.cqnu.lengyt.bean.User;
 import com.cqnu.lengyt.utils.ToastUtil;
 
 import org.litepal.crud.DataSupport;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -59,6 +62,7 @@ public class SettingFragment extends Fragment {
     }
 
     private void initView(View view) {
+        contactList = DataSupport.findAll(Contact.class);
         userName = (TextView) view.findViewById(R.id.setting_user_name);
         addContact = (Button) view.findViewById(R.id.setting_add_contact);
         importContact = (Button) view.findViewById(R.id.setting_import_contact);
@@ -69,6 +73,8 @@ public class SettingFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), AddEditContactActivity.class);
+                intent.putExtra("index", 1);
+                intent.putExtra("userName", mUserName);
                 startActivity(intent);
             }
         });
@@ -76,15 +82,6 @@ public class SettingFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 contactList = getSystemContactInfos();
-                for (int i = 0; i < contactList.size(); i++) {
-                    String name = contactList.get(i).getName();
-                    if (!TextUtils.isEmpty(name) && name.length() > 0) {
-                        String pinyin = CharacterParser.getInstance().getPinYinSpelling(name.substring(0, 1));
-                        contactList.get(i).setFirstLetter((char) (pinyin.charAt(0) - 32));
-                    }
-
-                }
-                Collections.sort(contactList, comparator);
                 DataSupport.saveAll(contactList);
                 if (DataSupport.findAll(Contact.class).size() >= 0) {
                     ToastUtil.showToast(getContext(), 0, "导入成功！");
@@ -94,9 +91,23 @@ public class SettingFragment extends Fragment {
 
             }
         });
+        exportContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    exportAsVcf(contactList);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
         loginOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                User mUser = new User();
+                mUser.setToDefault("isLogin");
+                mUser.updateAll("user=?", mUserName);
                 Intent i = new Intent(getContext(), LoginActivity.class);
                 startActivity(i);
                 getActivity().finish();
@@ -134,15 +145,75 @@ public class SettingFragment extends Fragment {
         return infos;
     }
 
-    private Comparator<Contact> comparator = new Comparator<Contact>() {
 
-        @Override
-        public int compare(Contact arg0, Contact arg1) {
-            //获取联系人姓名对应的拼音，通过比较拼音来确定联系人的先后次序
-            String pinyin0 = CharacterParser.getInstance().getPinYinSpelling(arg0.getName());
-            String pinyin1 = CharacterParser.getInstance().getPinYinSpelling(arg1.getName());
-            return pinyin0.compareTo(pinyin1);
+    /**
+     * 导出联系人到VCF文件中
+     */
+    public void exportAsVcf(List<Contact> contacts) throws IOException {
+        //导出到指定文件夹。
+        if (contacts.size() == 0) {
+            ToastUtil.showToast(getContext(), 0, "当前没有联系人！");
+        } else {
+            try {
+                //String path = Environment.getExternalStorageDirectory() + "/contacts/VCFContacts.vcf";
+                File file = new File("/mnt/sdcard/contact.vcf");
+                if (!file.exists()) {
+                    try {
+                        file.createNewFile();
+                        String path = "/mnt/sdcard/contact.vcf";
+                        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(path), "UTF-8");
+                        //将数据写入到文件中。
+                        for (Contact contact : contacts) {
+                            writer.write("BEGIN:VCARD\r\n");
+                            writer.write("VERSION:3.0\r\n");
+                            if (contact.getName() != null) {
+                                writer.write("N:;" + contact.getName() + ";;;\r\n");
+                            }
+                            if (contact.getPhone() != null) {
+                                writer.write("TEL;CELL:" + contact.getPhone() + "\r\n");
+                            }
+                            writer.write("END:VCARD");
+                            if (contacts.indexOf(contact) != (contacts.size() - 1)) {
+                                writer.write("\r\n");
+                            }
+                        }
+                        writer.flush();
+                        writer.close();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                } else {
+                    String path = "/mnt/sdcard/contact.vcf";
+                    OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(path), "UTF-8");
+                    //将数据写入到文件中。
+                    for (Contact contact : contacts) {
+                        writer.write("BEGIN:VCARD\r\n");
+                        writer.write("VERSION:3.0\r\n");
+                        if (contact.getName() != null) {
+                            writer.write("N:;" + contact.getName() + ";;;\r\n");
+                        }
+                        if (contact.getPhone() != null) {
+                            writer.write("TEL;CELL:" + contact.getPhone() + "\r\n");
+                        }
+                        writer.write("END:VCARD");
+                        if (contacts.indexOf(contact) != (contacts.size() - 1)) {
+                            writer.write("\r\n");
+                        }
+                    }
+                    writer.flush();
+                    writer.close();
+                    ToastUtil.showToast(getContext(), 0, "导出成功！");
+                }
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
+
         }
-    };
+    }
+
 
 }
